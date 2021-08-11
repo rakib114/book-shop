@@ -8,7 +8,7 @@ import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons'
 const ManageBook = () => {
     const [allBooks, setAllBooks] = useState([]);
     useEffect(() => {
-        const url = "http://localhost:5000/books"
+        const url = "https://blooming-wave-92908.herokuapp.com/books"
         fetch(url)
             .then(res => res.json())
             .then(data => setAllBooks(data))
